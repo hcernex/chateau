@@ -47,9 +47,15 @@ export default function Button({
 
   if (href) {
     return (
-      <Link href={href} className={buttonClasses}>
-        {children}
-      </Link>
+      <motion.div
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        className="inline-block"
+      >
+        <Link href={href} className={buttonClasses}>
+          {children}
+        </Link>
+      </motion.div>
     );
   }
 

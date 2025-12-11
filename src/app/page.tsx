@@ -89,15 +89,11 @@ export default function HomePage() {
             className="relative"
           >
             <div className="aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
-              <div className="w-full h-full bg-gradient-to-br from-[var(--chateau-gold-light)] to-[var(--chateau-stone)] flex items-center justify-center">
-                <div className="text-center text-white p-8">
-                  <svg className="w-20 h-20 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                    <polyline strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} points="9,22 9,12 15,12 15,22" />
-                  </svg>
-                  <p className="text-sm opacity-70">Image du château</p>
-                </div>
-              </div>
+              <img
+                src="/images/chateau-tours.jpg"
+                alt="Château de Beaujeu - Vue des tours"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-[var(--chateau-gold)] text-white p-6 rounded-lg shadow-xl">
               <p className="font-heading text-4xl font-bold">458</p>
@@ -124,7 +120,7 @@ export default function HomePage() {
             transition={{ duration: 0.5 }}
           >
             <Card href="/chambres" className="group h-full">
-              <CardImage src="/images/chambres/preview.jpg" alt="Chambres d'hôtes" />
+              <CardImage src="/images/chambres/chambre-toile-jouy.jpg" alt="Chambres d'hôtes" />
               <CardContent>
                 <CardTitle>Chambres d&apos;hôtes</CardTitle>
                 <CardDescription>
@@ -147,7 +143,7 @@ export default function HomePage() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <Card href="/hebergements/appartement" className="group h-full">
-              <CardImage src="/images/hebergements/appartement-preview.jpg" alt="Appartement indépendant" />
+              <CardImage src="/images/salle-petit-dejeuner.jpg" alt="Appartement indépendant" />
               <CardContent>
                 <CardTitle>Appartement indépendant</CardTitle>
                 <CardDescription>
@@ -170,7 +166,7 @@ export default function HomePage() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <Card href="/hebergements/gites" className="group h-full">
-              <CardImage src="/images/hebergements/gites-preview.jpg" alt="Gîtes" />
+              <CardImage src="/images/hebergements/cuisine-gite.jpg" alt="Gîtes" />
               <CardContent>
                 <CardTitle>Gîtes</CardTitle>
                 <CardDescription>
@@ -212,14 +208,11 @@ export default function HomePage() {
           >
             <Link href="/evenements/mariages" className="group block">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-6">
-                <div className="w-full h-full bg-gradient-to-br from-[var(--chateau-wine)] to-[var(--chateau-gold)] flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <svg className="w-16 h-16 mx-auto mb-2 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                    <p className="text-sm opacity-70">Photo de mariage</p>
-                  </div>
-                </div>
+                <img
+                  src="/images/evenements/mariage-exterieur.jpg"
+                  alt="Mariage au Château de Beaujeu"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
               </div>
               <h3 className="font-heading text-2xl text-white mb-3 group-hover:text-[var(--chateau-gold-light)] transition-colors">
@@ -247,14 +240,11 @@ export default function HomePage() {
           >
             <Link href="/evenements/seminaires" className="group block">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-6">
-                <div className="w-full h-full bg-gradient-to-br from-[var(--chateau-forest)] to-[var(--chateau-navy)] flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <svg className="w-16 h-16 mx-auto mb-2 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
-                    <p className="text-sm opacity-70">Photo de séminaire</p>
-                  </div>
-                </div>
+                <img
+                  src="/images/evenements/reception-nuit.jpg"
+                  alt="Séminaire au Château de Beaujeu"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
               </div>
               <h3 className="font-heading text-2xl text-white mb-3 group-hover:text-[var(--chateau-gold-light)] transition-colors">
