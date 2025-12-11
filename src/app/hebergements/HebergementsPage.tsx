@@ -15,7 +15,7 @@ export default function HebergementsPage() {
         title="Nos Hébergements"
         subtitle="Chambres d'hôtes, gîtes et appartement : jusqu'à 42 couchages sur le domaine pour tous vos événements."
         badge="HÉBERGEMENT"
-        image="/images/hebergements/hero.jpg"
+        image="/images/domaine/dependances-cour.jpg"
         height="medium"
       />
 
@@ -60,7 +60,7 @@ export default function HebergementsPage() {
         >
           <Card href="/chambres" className="group">
             <div className="grid md:grid-cols-2 gap-0">
-              <CardImage src="/images/chambres/preview.jpg" alt="Chambres d'hôtes" aspectRatio="square" />
+              <CardImage src="/images/chambres/chambre-toile-jouy.jpg" alt="Chambres d'hôtes" aspectRatio="square" />
               <CardContent className="flex flex-col justify-center p-8">
                 <span className="text-[var(--chateau-gold)] font-accent tracking-wider text-sm mb-2">
                   DANS LE CHÂTEAU
@@ -95,7 +95,7 @@ export default function HebergementsPage() {
             transition={{ duration: 0.5 }}
           >
             <Card href="/hebergements/gites" className="group h-full">
-              <CardImage src="/images/hebergements/gites-preview.jpg" alt="Gîtes" />
+              <CardImage src="/images/hebergements/cuisine-gite.jpg" alt="Gîtes" />
               <CardContent>
                 <span className="text-[var(--chateau-gold)] font-accent tracking-wider text-sm">
                   LOCATIONS
@@ -120,7 +120,7 @@ export default function HebergementsPage() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <Card href="/hebergements/appartement" className="group h-full">
-              <CardImage src="/images/hebergements/appartement-preview.jpg" alt="Appartement" />
+              <CardImage src="/images/salle-petit-dejeuner.jpg" alt="Appartement" />
               <CardContent>
                 <span className="text-[var(--chateau-gold)] font-accent tracking-wider text-sm">
                   DANS LE CHÂTEAU

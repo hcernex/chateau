@@ -12,7 +12,7 @@ export default function ReservationPage() {
         title="Réservation"
         subtitle="Réservez votre séjour au Château de Beaujeu et vivez une expérience unique."
         badge="RÉSERVER"
-        image="/images/reservation-hero.jpg"
+        image="/images/salle-manger.jpg"
         height="medium"
       />
 

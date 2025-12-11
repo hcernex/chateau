@@ -16,7 +16,7 @@ export default function ChambresPage() {
         title="Nos Chambres d'hôtes"
         subtitle="5 chambres de caractère au cœur du château, décorées avec du mobilier d'époque. Petit-déjeuner inclus."
         badge="HÉBERGEMENT"
-        image="/images/chambres/hero.jpg"
+        image="/images/chambres/chambre-toile-jouy.jpg"
         height="medium"
       />
 

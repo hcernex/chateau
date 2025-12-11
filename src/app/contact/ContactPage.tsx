@@ -13,7 +13,7 @@ export default function ContactPage() {
         title="Contact"
         subtitle="Une question, une demande de renseignement ? N'hésitez pas à nous contacter."
         badge="NOUS ÉCRIRE"
-        image="/images/contact-hero.jpg"
+        image="/images/salle-petit-dejeuner.jpg"
         height="medium"
       />
 

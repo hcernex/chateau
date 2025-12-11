@@ -31,10 +31,10 @@ export default function Button({
   const baseStyles = 'inline-flex items-center justify-center font-accent font-medium tracking-wide transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
 
   const variants = {
-    primary: 'bg-[var(--chateau-gold)] text-white hover:bg-[var(--chateau-wine)] focus:ring-[var(--chateau-gold)]',
-    secondary: 'bg-[var(--chateau-navy)] text-white hover:bg-[var(--chateau-wine)] focus:ring-[var(--chateau-navy)]',
-    outline: 'border-2 border-[var(--chateau-gold)] text-[var(--chateau-gold)] hover:bg-[var(--chateau-gold)] hover:text-white focus:ring-[var(--chateau-gold)]',
-    ghost: 'text-[var(--chateau-navy)] hover:bg-[var(--chateau-gold-light)] focus:ring-[var(--chateau-gold)]',
+    primary: 'bg-[#C9A227] text-[#FFFFFF] hover:bg-[#722F37] focus:ring-[#C9A227]',
+    secondary: 'bg-[#1A2744] text-[#FFFFFF] hover:bg-[#722F37] focus:ring-[#1A2744]',
+    outline: 'border-2 border-[#C9A227] text-[#C9A227] hover:bg-[#C9A227] hover:text-[#FFFFFF] focus:ring-[#C9A227]',
+    ghost: 'text-[#1A2744] hover:bg-[#E8D5A3] focus:ring-[#C9A227]',
   };
 
   const sizes = {

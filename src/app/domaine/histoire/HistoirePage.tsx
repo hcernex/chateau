@@ -21,7 +21,7 @@ export default function HistoirePage() {
         title="L'Histoire du Château"
         subtitle="Un monument vivant depuis 1566, gardien de plus de quatre siècles d'histoire."
         badge="LE DOMAINE"
-        image="/images/domaine/histoire-hero.jpg"
+        image="/images/chateau-tours.jpg"
         height="medium"
       />
 
@@ -42,13 +42,12 @@ export default function HistoirePage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-[var(--chateau-gold-light)] to-[var(--chateau-stone)] flex items-center justify-center">
-                <div className="text-center text-white p-8">
-                  <svg className="w-16 h-16 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                  <p className="text-sm opacity-70">Photo historique</p>
-                </div>
+              <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                <img
+                  src="/images/chateau-tours.jpg"
+                  alt="Le Château de Beaujeu"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <h2 className="font-heading text-2xl text-[var(--chateau-navy)] mb-4">

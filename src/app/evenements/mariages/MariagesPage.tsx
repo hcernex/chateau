@@ -40,7 +40,7 @@ export default function MariagesPage() {
         title="Votre Mariage au Château"
         subtitle="Dites 'oui' dans un cadre d'exception. Monument vivant de l'histoire, sublime parc arboré et vignobles à perte de vue."
         badge="MARIAGES & RÉCEPTIONS"
-        image="/images/mariages/hero.jpg"
+        image="/images/evenements/mariage-exterieur.jpg"
         primaryCTA={{ label: 'Demander un devis', href: '/contact' }}
         secondaryCTA={{ label: 'Visiter le château', href: '/contact' }}
       />
@@ -90,14 +90,13 @@ export default function MariagesPage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="aspect-[4/5] rounded-lg overflow-hidden bg-gradient-to-br from-[var(--chateau-wine)] to-[var(--chateau-gold)] flex items-center justify-center"
+            className="aspect-[4/5] rounded-lg overflow-hidden"
           >
-            <div className="text-center text-white p-8">
-              <svg className="w-20 h-20 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
-              <p className="text-lg opacity-70">Photo de mariage</p>
-            </div>
+            <img
+              src="/images/evenements/mariage-exterieur.jpg"
+              alt="Mariage en extérieur au château"
+              className="w-full h-full object-cover"
+            />
           </motion.div>
         </div>
       </Section>

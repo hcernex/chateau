@@ -14,18 +14,19 @@ const categories = [
 ];
 
 const photos = [
-  { id: 1, category: 'chateau', alt: 'Façade du château' },
-  { id: 2, category: 'chateau', alt: 'Vue aérienne' },
-  { id: 3, category: 'chambres', alt: 'Suite La Tour' },
-  { id: 4, category: 'chambres', alt: 'Chambre Louis XVI' },
-  { id: 5, category: 'parc', alt: 'Jardin à la française' },
-  { id: 6, category: 'parc', alt: 'Piscine' },
-  { id: 7, category: 'evenements', alt: 'Mariage - Cérémonie' },
-  { id: 8, category: 'evenements', alt: 'Salle de réception' },
-  { id: 9, category: 'chateau', alt: 'Entrée principale' },
-  { id: 10, category: 'chambres', alt: 'Suite Jaune' },
-  { id: 11, category: 'parc', alt: 'Vue sur la vallée' },
-  { id: 12, category: 'evenements', alt: 'Caves voûtées' },
+  { id: 1, category: 'chateau', alt: 'Vue aérienne du château', src: '/images/hero-chateau.jpg' },
+  { id: 2, category: 'chateau', alt: 'Château avec ses tours', src: '/images/chateau-tours.jpg' },
+  { id: 3, category: 'chambres', alt: 'Chambre Toile de Jouy', src: '/images/chambres/chambre-toile-jouy.jpg' },
+  { id: 4, category: 'chateau', alt: 'Salle à manger', src: '/images/salle-manger.jpg' },
+  { id: 5, category: 'parc', alt: 'Allée bordée d\'arbres', src: '/images/allee-arbres.jpg' },
+  { id: 6, category: 'parc', alt: 'Pigeonnier dans le parc', src: '/images/domaine/parc-pigeonnier.jpg' },
+  { id: 7, category: 'evenements', alt: 'Mariage en extérieur', src: '/images/evenements/mariage-exterieur.jpg' },
+  { id: 8, category: 'evenements', alt: 'Grande salle de réception', src: '/images/evenements/salle-reception.jpg' },
+  { id: 9, category: 'chateau', alt: 'Dépendances et cour', src: '/images/domaine/dependances-cour.jpg' },
+  { id: 10, category: 'chateau', alt: 'Salle du petit-déjeuner', src: '/images/salle-petit-dejeuner.jpg' },
+  { id: 11, category: 'parc', alt: 'Pigeonnier extérieur', src: '/images/domaine/pigeonnier-exterieur.jpg' },
+  { id: 12, category: 'evenements', alt: 'Réception de nuit', src: '/images/evenements/reception-nuit.jpg' },
+  { id: 13, category: 'chambres', alt: 'Cuisine du gîte', src: '/images/hebergements/cuisine-gite.jpg' },
 ];
 
 export default function GaleriePage() {
@@ -56,7 +57,7 @@ export default function GaleriePage() {
         title="Galerie Photos"
         subtitle="Découvrez le Château de Beaujeu et son domaine en images."
         badge="LE DOMAINE"
-        image="/images/domaine/galerie-hero.jpg"
+        image="/images/hero-chateau.jpg"
         height="medium"
       />
 
@@ -95,13 +96,12 @@ export default function GaleriePage() {
                 className="aspect-square rounded-lg overflow-hidden cursor-pointer group"
                 onClick={() => setSelectedPhoto(photo.id)}
               >
-                <div className="w-full h-full bg-gradient-to-br from-[var(--chateau-gold-light)] to-[var(--chateau-stone)] flex items-center justify-center relative">
-                  <div className="text-center text-white p-4">
-                    <svg className="w-10 h-10 mx-auto mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <p className="text-xs opacity-70">{photo.alt}</p>
-                  </div>
+                <div className="w-full h-full relative">
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="w-full h-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-[var(--chateau-navy)]/0 group-hover:bg-[var(--chateau-navy)]/20 transition-colors flex items-center justify-center">
                     <svg
                       className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity"
@@ -163,17 +163,14 @@ export default function GaleriePage() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
-              className="max-w-4xl max-h-[80vh] w-full mx-8 aspect-video bg-gradient-to-br from-[var(--chateau-gold-light)] to-[var(--chateau-stone)] rounded-lg flex items-center justify-center"
+              className="max-w-4xl max-h-[80vh] w-full mx-8 rounded-lg overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="text-center text-white">
-                <svg className="w-20 h-20 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                <p className="text-lg opacity-70">
-                  {photos.find((p) => p.id === selectedPhoto)?.alt}
-                </p>
-              </div>
+              <img
+                src={photos.find((p) => p.id === selectedPhoto)?.src}
+                alt={photos.find((p) => p.id === selectedPhoto)?.alt}
+                className="w-full h-full object-contain"
+              />
             </motion.div>
           </motion.div>
         )}

@@ -37,7 +37,7 @@ export default function SeminairesPage() {
         title="Séminaires & Événements Pro"
         subtitle="Un cadre inspirant à 2h de Paris pour vos réunions et événements d'entreprise. Privatisation possible avec hébergement sur place."
         badge="SÉMINAIRES"
-        image="/images/seminaires/hero.jpg"
+        image="/images/evenements/salle-reception.jpg"
         primaryCTA={{ label: 'Demander un devis', href: '/contact' }}
       />
 
@@ -87,14 +87,13 @@ export default function SeminairesPage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-[var(--chateau-forest)] to-[var(--chateau-navy)] flex items-center justify-center"
+            className="aspect-[4/3] rounded-lg overflow-hidden"
           >
-            <div className="text-center text-white p-8">
-              <svg className="w-20 h-20 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-              </svg>
-              <p className="text-lg opacity-70">Photo de séminaire</p>
-            </div>
+            <img
+              src="/images/evenements/salle-reception.jpg"
+              alt="Salle de réception pour séminaires"
+              className="w-full h-full object-cover"
+            />
           </motion.div>
         </div>
       </Section>

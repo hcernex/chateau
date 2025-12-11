@@ -22,8 +22,8 @@ export default function ImagePlaceholder({
   className,
   priority = false,
 }: ImagePlaceholderProps) {
-  // Si l'image n'existe pas ou est un chemin local placeholder, afficher le placeholder
-  const isPlaceholder = !src || src.startsWith('/images/');
+  // Si l'image n'existe pas, afficher le placeholder
+  const isPlaceholder = !src;
 
   if (isPlaceholder) {
     return (

@@ -15,7 +15,7 @@ export default function GitesPage() {
         title="Nos Gîtes"
         subtitle="Maison du Jardin et Pigeonnier : des hébergements indépendants pour vos groupes et événements."
         badge="HÉBERGEMENT"
-        image="/images/hebergements/gites-hero.jpg"
+        image="/images/domaine/pigeonnier-exterieur.jpg"
         height="medium"
       />
 
@@ -30,13 +30,12 @@ export default function GitesPage() {
             className={`grid lg:grid-cols-2 gap-12 items-center ${index > 0 ? 'mt-16 pt-16 border-t border-[var(--chateau-stone)]/20' : ''}`}
           >
             <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-              <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-[var(--chateau-gold-light)] to-[var(--chateau-stone)] flex items-center justify-center">
-                <div className="text-center text-white p-8">
-                  <svg className="w-16 h-16 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                  </svg>
-                  <p className="text-sm opacity-70">{gite.nom}</p>
-                </div>
+              <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                <img
+                  src={index === 0 ? '/images/hebergements/cuisine-gite.jpg' : '/images/domaine/pigeonnier-exterieur.jpg'}
+                  alt={gite.nom}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 

@@ -55,7 +55,7 @@ export default function EnvironnementPage() {
         title="La Région"
         subtitle="Au cœur du Berry et du vignoble de Sancerre, une terre de traditions et de découvertes."
         badge="ENVIRONNEMENT"
-        image="/images/domaine/region-hero.jpg"
+        image="/images/allee-arbres.jpg"
         height="medium"
       />
 
