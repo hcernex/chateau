@@ -31,9 +31,9 @@ export default function Button({
   const baseStyles = 'inline-flex items-center justify-center font-accent font-medium tracking-wide transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
 
   const variants = {
-    primary: 'bg-[#C9A227] text-[#FFFFFF] hover:bg-[#722F37] focus:ring-[#C9A227]',
+    primary: 'bg-[#C9A227] text-[#722F37] hover:bg-[#722F37] hover:text-[#FFFFFF] focus:ring-[#C9A227]',
     secondary: 'bg-[#1A2744] text-[#FFFFFF] hover:bg-[#722F37] focus:ring-[#1A2744]',
-    outline: 'border-2 border-[#C9A227] text-[#C9A227] hover:bg-[#C9A227] hover:text-[#FFFFFF] focus:ring-[#C9A227]',
+    outline: 'border-2 border-[#C9A227] text-[#C9A227] hover:bg-[#C9A227] hover:text-[#722F37] focus:ring-[#C9A227]',
     ghost: 'text-[#1A2744] hover:bg-[#E8D5A3] focus:ring-[#C9A227]',
   };
 

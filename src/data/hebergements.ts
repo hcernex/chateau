@@ -19,7 +19,7 @@ export const hebergements: Hebergement[] = [
       'Parking',
     ],
     description: 'Entièrement rénovée en 2014, la Maison du Jardin peut accueillir jusqu\'à 20 personnes dans 10 chambres séparées. Idéale pour les groupes lors de mariages ou d\'événements, elle dispose de 9 douches individuelles et d\'un grand salon commun pour les moments de convivialité.',
-    images: ['/images/hebergements/maison-jardin-1.jpg', '/images/hebergements/maison-jardin-2.jpg'],
+    images: ['/images/hebergements/cuisine-gite.jpg', '/images/domaine/dependances-cour.jpg'],
   },
   {
     id: '2',
@@ -40,7 +40,7 @@ export const hebergements: Hebergement[] = [
       'Parking',
     ],
     description: 'Charmant gîte rénové en 2016, la Maison du Pigeonnier est parfaite pour une famille ou un groupe d\'amis de 4 personnes. Elle dispose de 2 chambres (une double et une twin), d\'une salle de bain et d\'une cuisine indépendante entièrement équipée pour des séjours en toute autonomie.',
-    images: ['/images/hebergements/pigeonnier-1.jpg', '/images/hebergements/pigeonnier-2.jpg'],
+    images: ['/images/domaine/pigeonnier-exterieur.jpg', '/images/domaine/parc-pigeonnier.jpg'],
   },
   {
     id: '3',
@@ -59,7 +59,7 @@ export const hebergements: Hebergement[] = [
       'Chauffage',
     ],
     description: 'Situé au sein même du château, cet appartement indépendant de 3 chambres peut accueillir jusqu\'à 6 personnes. Avec son accès privatif, il offre l\'intimité d\'un logement indépendant tout en bénéficiant du cadre exceptionnel du monument historique.',
-    images: ['/images/hebergements/appartement-1.jpg', '/images/hebergements/appartement-2.jpg'],
+    images: ['/images/salle-manger.jpg', '/images/salle-petit-dejeuner.jpg'],
   },
 ];
 
