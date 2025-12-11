@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+:root {
+  /* Couleurs Principales */
+  --chateau-gold: #C9A227;
+  --chateau-gold-light: #E8D5A3;
+  --chateau-navy: #1A2744;
+  --chateau-cream: #FAF7F2;
+  --chateau-stone: #8B8474;
+
+  /* Couleurs d'Accent */
+  --chateau-wine: #722F37;
+  --chateau-forest: #2D4A3E;
+  --chateau-white: #FFFFFF;
+  --chateau-black: #0D0D0D;
+
+  /* Couleurs Fonctionnelles */
+  --success: #4A7C59;
+  --error: #B84A4A;
+  --warning: #D4A84B;
+
+  /* Typographie - Les variables sont définies par Next.js Font */
+
+  /* Background et Foreground */
+  --background: var(--chateau-cream);
+  --foreground: var(--chateau-navy);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Couleurs Château */
+  --color-chateau-gold: var(--chateau-gold);
+  --color-chateau-gold-light: var(--chateau-gold-light);
+  --color-chateau-navy: var(--chateau-navy);
+  --color-chateau-cream: var(--chateau-cream);
+  --color-chateau-stone: var(--chateau-stone);
+  --color-chateau-wine: var(--chateau-wine);
+  --color-chateau-forest: var(--chateau-forest);
+  --color-chateau-white: var(--chateau-white);
+  --color-chateau-black: var(--chateau-black);
+
+  /* Couleurs fonctionnelles */
+  --color-success: var(--success);
+  --color-error: var(--error);
+  --color-warning: var(--warning);
+
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--chateau-navy);
+}
+
+/* Styles de base pour les titres */
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Liens */
+a {
+  color: var(--chateau-gold);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--chateau-wine);
+}
+
+/* Sélection de texte */
+::selection {
+  background: var(--chateau-gold-light);
+  color: var(--chateau-navy);
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--chateau-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--chateau-stone);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--chateau-navy);
+}
+
+/* Classes utilitaires pour les polices */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+/* Animation fade-in de base */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Classes pour les conteneurs */
+.container-custom {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Overlay pour les images hero */
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 39, 68, 0.4) 0%,
+    rgba(26, 39, 68, 0.6) 100%
+  );
+}
+
+/* Bouton WhatsApp flottant */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-float svg {
+  width: 32px;
+  height: 32px;
+  fill: white;
+}
