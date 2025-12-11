@@ -74,14 +74,14 @@ h3 {
   font-size: 1.5rem;
 }
 
-/* Liens */
-a {
+/* Liens - seulement pour les liens de texte, pas les boutons */
+a:not([class*="bg-"]):not([class*="border-"]) {
   color: var(--chateau-gold);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-a:hover {
+a:not([class*="bg-"]):not([class*="border-"]):hover {
   color: var(--chateau-wine);
 }
 
